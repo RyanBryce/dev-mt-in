@@ -1,0 +1,83 @@
+
+.welcome_Text_Box_Size{
+  flex-direction: column;
+  width: 435px;
+  margin-left: 65px;
+  margin-top: 60px;
+  text-align: justify;
+}
+.mid_Section_Right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  margin-top: -50px;
+}
+.update_Profile_Container{
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  box-shadow: 0px 1px 2px 2px;
+}
+.update_Prof_Box{
+  width: 410px;
+  padding: 50px 0 20px 0;
+}
+.profile_Setting{
+  justify-content: center;
+  display: flex;
+  width: 410px;
+}
+.profile_Setting_Container {
+  height: 50px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;box-shadow: 0px 1px 2px 2px;
+  border-bottom-width: 0px;
+  margin-bottom: 14px;
+}
+.input_Box_Container {
+  width: 410px;
+}
+
+.font_Lora_Dev {
+  font-family: 'Lora', serif;
+  font-size: 21px;
+}
+
+.first_Name_Flex{
+  display: flex;
+  justify-content: flex-start;
+}
+.last_Name_Flex{
+  display: flex;
+  justify-content: flex-end;
+}
+.name_Size_Font {
+  font-family: 'Lora', serif;
+  font-size: 46px;
+}
+.tagline_Name_Font{
+  font-family: "Open Sans", serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 15px 0 15px 0;
+}
+.bio_text_box{
+  height: 350px;
+  font-family: "Open Sans", serif;
+  font-size: 14px;
+  width: 400px;
+  overflow: scroll;
+}
+
+.footer_Container {
+  border-top: 2px solid #A9A9A9;
+  height: 50px;
+  margin: 0px 50px 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

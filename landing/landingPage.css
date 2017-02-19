@@ -1,0 +1,62 @@
+body{
+  height: 100%;
+  margin: 25px 40px 0 40px;
+}
+
+.first_Name_Flex{
+  display: flex;
+  justify-content: flex-start;
+}
+.last_Name_Flex{
+  display: flex;
+  justify-content: flex-end;
+}
+.name_Size_Font {
+  font-family: 'Lora', serif;
+  font-size: 46px;
+}
+.tagline_Name_Font{
+  font-family: "Open Sans", serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 15px 0 15px 0;
+}
+.bio_text_box{
+  height: 350px;
+  font-family: "Open Sans", serif;
+  font-size: 14px;
+  overflow: scroll;
+}
+
+#diamond-narrow {
+  background-image: url("https://pbs.twimg.com/profile_images/820457701813518337/VmhyKoOz_bigger.jpg");
+  margin-left: 25px;
+  margin-top: 75px;
+  border: 250px solid white;
+  border-left-width: 250px;
+  border-right-width: 250px;
+	border-bottom-width: 350px;
+  border-bottom-style: transparent;
+  border-bottom-color: transparent;
+	position: relative;
+  border-top-width: 0px;
+  transform: rotate(6deg);
+}
+#diamond-narrow:after {
+	content: '';
+	position: absolute;
+	left: -225px;
+  top: 207px;
+	border: 250px solid transparent;
+  border-bottom-width: 0px;
+	border-top: 350px solid #74FDF2;
+  transform: rotate(-14deg);
+}
+.footer_Container {
+  border-top: 2px solid #A9A9A9;
+  height: 50px;
+  margin: 0px 50px 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

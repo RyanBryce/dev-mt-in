@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="social">
+
+<head>
+    <link rel="stylesheet" href="findFriends.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+</head>
+
+<body ng-controller="controller1" class="foot_Fix">
+    <header class="header_Cont">
+
+        <div class="">
+            <img src="images/icons/Back-Arrow.svg" alt="">
+        </div>
+
+        <div class="font_Lora_Dev">
+            DevMountain
+        </div>
+
+        <div class="">
+            <img src="images/icons/Search.svg" alt="">
+        </div>
+    </header>
+
+    <section class="mid_Mid_Section">
+        <div class="welcome_Text_Box_Size">
+            <div class="user_Text_Box">
+
+                <div ng-repeat="friend in friends" class="first_Name_Flex">
+                    <div class="name_Size_Font"></div>
+                </div>
+
+                <div class="last_Name_Flex">
+                    <div class="name_Size_Font">Lastname</div>
+                </div>
+                <div class="tagline_Name_Font">
+                    SOME AWESOME TAGLINE ABOUT YOU
+                </div>
+                <div class="bio_text_box">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+        </div>
+        <div class="mid_Section_Right">
+            <div class="search_For_Friends_Container">
+                <a href="#" type"button" class="search_For_Friends_Img">
+                  <img src="images/icons/Search.svg" alt="">
+                </a>
+                <div class="search_For_Friends">
+                    Search For Friends
+                </div>
+            </div>
+
+            <div class="search_For_Friends_Profile_Img_Container">
+                <div ng-repeat="friend in friends" class="search_For_Friends_Profiles">
+                  <img src="{{friend.profileUrl}}" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer_Container">
+        <div class="">
+            <a href="#">View Friends</a>
+        </div>
+        <div class="">
+            <a href="#">Find Friends</a>
+        </div>
+        <div class="">
+            <a href="#">Update Profile</a>
+        </div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  	<script src="js/module.js"></script>
+  	<script src="js/controller1.js"></script>
+  	<script src="js/service.js">
+  	</script>
+  </body>
+
+  </html>

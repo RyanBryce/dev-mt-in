@@ -1,0 +1,181 @@
+body{
+  height: 100%;
+  margin: 25px 40px 0 40px;
+}
+
+input {
+  border-color: #B6B6B6;
+  color: #B6B6B6;
+  padding: 4px;
+  border-width: 1px;
+  font-size: 19px;
+  width: 400px;
+  font-family: 'Lora', serif;
+  margin: 4px 0 4px 0;
+}
+input[type=button]{
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 19px;
+  font-family: 'Lora', serif;
+  height: 50px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 2px 2px;
+  border-bottom-width: 0px;
+  margin-top: 14px;
+}
+textarea{
+  border-color: #B6B6B6;
+  color: #B6B6B6;
+  padding: 4px;
+  font-size: 19px;
+  width: 400px;
+  height: 250px;
+  font-family: 'Lora', serif;
+  margin: 4px 0 4px 0;
+  resize: none;
+}
+
+a{
+  font-family: 'Open Sans', serif;
+  font-size: 18px;
+  text-decoration: none;
+  outline: none;
+}
+a:active{
+  text-decoration: underline;
+
+}
+.foot_fix {
+  display: flex;
+  height 100%
+}
+.footer_Container {
+  border-top: 2px solid #A9A9A9;
+  height: 50px;
+  margin: 200px 50px 0 50px;
+}
+.tourquios_teal_color{
+  color: #74FDF2;
+}
+.header_Cont {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #D7D7D7;
+}
+.dimond_header {
+  background-image: url("https://pbs.twimg.com/profile_images/820457701813518337/VmhyKoOz_bigger.jpg");
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 43.3px 25px 0 25px;
+  border-color: transparent white white white;
+}
+.mid_Mid_Section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 725px;
+}
+.welcome_Text_Box_Size{
+  flex-direction: column;
+  width: 435px;
+  margin-left: 65px;
+  margin-top: 60px;
+  text-align: justify;
+}
+.mid_Section_Right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  margin-top: -50px;
+}
+.search_For_Friends_Profiles{
+  width: 175px;
+  height: 175px;
+  border: 1px solid red;
+  padding: 0px 0 0px 0;
+}
+.search_For_Friends{
+  justify-content: center;
+  display: flex;
+  width: 410px;
+}
+.search_For_Friends_Profile_Img_Container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 450px;
+  height: 550px;
+  box-shadow: 0px 1px 2px 2px;
+}
+.search_For_Friends_Container {
+  height: 50px;
+  width: 450px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 1px 2px 2px;
+  border-bottom-width: 0px;
+  margin-bottom: 14px;
+}
+.search_For_Friends_Img{
+  display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    cu
+}
+.input_Box_Container {
+  width: 410px;
+}
+
+.font_Lora_Dev {
+  font-family: 'Lora', serif;
+  font-size: 21px;
+}
+
+.first_Name_Flex{
+  display: flex;
+  justify-content: flex-start;
+}
+.last_Name_Flex{
+  display: flex;
+  justify-content: flex-end;
+}
+.name_Size_Font {
+  font-family: 'Lora', serif;
+  font-size: 46px;
+}
+.tagline_Name_Font{
+  font-family: "Open Sans", serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 15px 0 15px 0;
+}
+.bio_text_box{
+  height: 350px;
+  font-family: "Open Sans", serif;
+  font-size: 14px;
+  width: 400px;
+  overflow: scroll;
+}
+
+.footer_Container {
+  border-top: 2px solid #A9A9A9;
+  height: 50px;
+  margin: 0px 50px 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
