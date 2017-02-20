@@ -3,11 +3,11 @@ angular.module('app').controller('navCtrl',function($scope){
 
    $scope.activeNav = function (clickedNavView) {
      pages.forEach(function(page) {
-       if (page === clickedNavView) {
-         $scope[page] = true;
-       } else {
-         $scope[page] = false;
-       }
+            if (page === clickedNavView) {
+                $scope[page] = true;
+            } else {
+                $scope[page] = false;
+            }
       })
     }
 

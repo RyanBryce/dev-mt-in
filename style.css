@@ -40,10 +40,6 @@ a{
   text-decoration: none;
   outline: none;
 }
-.search_icon:hover {
-  cursor: pointer;
-
-}
 .tourquios_teal_color{
   color: #74FDF2;
 }
@@ -91,6 +87,9 @@ a{
   display: flex;
   justify-content: center;
   width: 60%;
+}
+.coursor_pointer:hover {
+  cursor: pointer;
 }
 
 #diamond-narrow {
@@ -184,4 +183,92 @@ a{
    overflow: scroll;
  }
 
+
  /*update Profile */
+
+
+ .profile_Setting_Container {
+   height: 50px;
+   width: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px 1px 2px 2px;
+   border-bottom-width: 0px;
+   margin-bottom: 14px;
+ }
+ .profile_Setting{
+   justify-content: center;
+   display: flex;
+   width: 410px;
+ }
+ .mid_Section_Right {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 50px;
+   width: 600px;
+ }
+ .update_Profile_Container{
+   display: flex;
+   justify-content: center;
+   width: 500px;
+   height: 500px;
+   box-shadow: 0px 1px 2px 2px;
+ }
+ .update_Prof_Box{
+   width: 410px;
+   padding: 50px 0 20px 0;
+ }
+ .save_Profile_Changes {
+   height: 50px;
+   width: 500px;
+   font-size: 17px;
+   color: #9A9A9A;
+   margin-top: 14px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px 1px 2px 2px;
+ }
+
+
+ /*searchForFriends*/
+ .search_For_Friends_Profiles{
+   width: 175px;
+   height: 175px;
+   border: 1px solid red;
+   padding: 0px 0 0px 0;
+ }
+ .search_For_Friends{
+   justify-content: center;
+   flex-grow: 1;
+ }
+ .search_For_Friends_Text{
+   justify-content: center;
+   font-size: 21px;
+   font-family: 'Lora';
+ }
+ .search_For_Friends_Img {
+   flex-grow: 1;
+ }
+
+
+ /*viewFriends*/
+.ascending_box_container{
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.ascending_box_container_Box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16px;
+  width: 104px;
+  border: 2px solid black;
+}
+.ascending_box_container_Text{
+  font-family: 'Lora';
+  font-size: 12px;
+}

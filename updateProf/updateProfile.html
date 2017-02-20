@@ -1,7 +1,7 @@
-
+<body ng-controller="updateCtrl">
     <header class="header_Cont">
 
-        <div class="">
+        <div class="" onclick="history.go(-1)">
             <img src="images/icons/Back-Arrow.svg" alt="">
         </div>
 
@@ -13,7 +13,7 @@
             <img src="images/icons/Search.svg" alt="">
         </div>
     </header>
-
+{{name}}
     <section class="mid_Mid_Section">
         <div class="welcome_Text_Box_Size">
             <div class="user_Text_Box">
@@ -41,18 +41,21 @@
         <div class="mid_Section_Right">
             <div class="profile_Setting_Container">
                 <div class="profile_Setting">
-                    Profile Settings
+                    <div class="search_For_Friends_Text">
+                        Profile Settings
+                    </div>
                 </div>
             </div>
             <div class="update_Profile_Container">
                 <div class="update_Prof_Box">
                     <div class="input_Box_Container">
-                        <input type="text" name="" placeholder="Full Name">
-                        <input type="text" name="" placeholder="Tagline">
-                        <input type="text" name="" placeholder="Profile Image Url">
-                        <textarea name="name" placeholder="Bio"></textarea>
+                        <input type="text" class="main_Input" placeholder="Full Name">
+                        <input type="text" class="main_Input" placeholder="Tagline">
+                        <input type="text" class="main_Input" placeholder="Profile Image Url">
+                        <textarea class="inital_textarea" placeholder="Bio"></textarea>
                     </div>
                 </div>
             </div>
-            <input type="button" href="landingPage.html" name="" value="Save Changes">
+            <div type="button" href="" class="save_Profile_Changes coursor_pointer">Save Changes</div>
         </div>
+</body>

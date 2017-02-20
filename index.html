@@ -17,30 +17,29 @@
 
 	<footer class="footer_Container" ng-controller="navCtrl">
 		<div class="bottom-nav" ng-model="view">
-			<div ng-class="{loaded: view}" ng-click="activeNav('view')"s href="">View Friends</div>
+			<div ng-class="{loaded: view}" ng-click="activeNav('view')" ui-sref="View">View Friends</div>
 		</div>
 		<div class="bottom-nav" ng-model="find">
-			<div ng-class="{loaded: find}" ng-click="activeNav('find')" href="">Find Friends</div>
+			<div ng-class="{loaded: find}" ng-click="activeNav('find')" ui-sref="Find">Find Friends</div>
 		</div>
 		<div class="bottom-nav" ng-model="update">
 			<div ng-class="{loaded: update}" ng-click="activeNav('update')" ui-sref="Update">Update Profile</div>
 		</div>
-  </footer>
+	</footer>
 
 
 
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
-		<script src="module.js"></script>
-		<script src="friendsProf/friendsProf.js"></script>
-		<script src="friendsSearch/friendsSearch.js"></script>
-		<script src="friendView/friendView.js"></script>
-		<script src="landing/landing.js"></script>
-		<script src="initial/initial.js"></script>
-		<script src="navCtrl.js"></script>
-
-		<script src="updateProf/updateProf.js"></script>
-		<script src="service.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+	<script src="module.js"></script>
+	<script src="friendsProf/friendsProf.js"></script>
+	<script src="friendsSearch/friendsSearch.js"></script>
+	<script src="friendView/friendView.js"></script>
+	<script src="landing/landing.js"></script>
+	<script src="initial/initial.js"></script>
+	<script src="navCtrl.js"></script>
+	<script src="updateProf/updateProf.js"></script>
+	<script src="service.js"></script>
 </body>
 
 </html>

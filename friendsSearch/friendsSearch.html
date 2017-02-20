@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html ng-app="social">
-
-<head>
-    <link rel="stylesheet" href="findFriends.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-
-</head>
-
-<body ng-controller="controller1" class="foot_Fix">
+<body ng-controller="findCtrl" class="foot_Fix">
     <header class="header_Cont">
 
-        <div class="">
+        <div class="" onclick="history.go(-1)">
             <img src="images/icons/Back-Arrow.svg" alt="">
         </div>
 
@@ -23,13 +13,13 @@
             <img src="images/icons/Search.svg" alt="">
         </div>
     </header>
-
+{{name}}
     <section class="mid_Mid_Section">
         <div class="welcome_Text_Box_Size">
             <div class="user_Text_Box">
 
-                <div ng-repeat="friend in friends" class="first_Name_Flex">
-                    <div class="name_Size_Font"></div>
+                <div class="first_Name_Flex">
+                    <div class="name_Size_Font">Firstname</div>
                 </div>
 
                 <div class="last_Name_Flex">
@@ -49,40 +39,26 @@
             </div>
         </div>
         <div class="mid_Section_Right">
-            <div class="search_For_Friends_Container">
-                <a href="#" type"button" class="search_For_Friends_Img">
-                  <img src="images/icons/Search.svg" alt="">
-                </a>
+            <div class="profile_Setting_Container">
+                <div href="#" type "button" class="search_For_Friends_Img">
+                    <div>
+                        <div>
+                            <img src="images/icons/Search.svg">
+                        </div>
+                    </div>
+                </div>
                 <div class="search_For_Friends">
-                    Search For Friends
+                    <div class="search_For_Friends_Text">
+                        Search For Friends
+                    </div>
                 </div>
             </div>
 
-            <div class="search_For_Friends_Profile_Img_Container">
-                <div ng-repeat="friend in friends" class="search_For_Friends_Profiles">
-                  <img src="{{friend.profileUrl}}" alt="">
+            <div class="update_Profile_Container">
+                <div class="search_For_Friends_Profiles">
+                    <img src="" alt="">
                 </div>
 
             </div>
         </div>
     </section>
-    <footer class="footer_Container">
-        <div class="">
-            <a href="#">View Friends</a>
-        </div>
-        <div class="">
-            <a href="#">Find Friends</a>
-        </div>
-        <div class="">
-            <a href="#">Update Profile</a>
-        </div>
-
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  	<script src="js/module.js"></script>
-  	<script src="js/controller1.js"></script>
-  	<script src="js/service.js">
-  	</script>
-  </body>
-
-  </html>

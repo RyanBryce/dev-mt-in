@@ -16,4 +16,14 @@ angular.module('app', ['ui.router']).config(function($stateProvider, $urlRouterP
        templateUrl: 'updateProf/updateProfile.html',
        controller: 'updateCtrl'
      })
+     .state('Find', {
+       url: '/find_Friends',
+       templateUrl: 'friendsSearch/friendsSearch.html',
+       controller: 'findCtrl'
+     })
+     .state('View', {
+       url: '/view_Friends',
+       templateUrl: 'friendView/friendView.html',
+       controller: 'viewCtrl'
+     })
 });
