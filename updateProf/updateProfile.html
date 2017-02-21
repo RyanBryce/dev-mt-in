@@ -13,28 +13,22 @@
             <img src="images/icons/Search.svg" alt="">
         </div>
     </header>
-{{name}}
     <section class="mid_Mid_Section">
         <div class="welcome_Text_Box_Size">
             <div class="user_Text_Box">
 
                 <div class="first_Name_Flex">
-                    <div class="name_Size_Font">Firstname</div>
+                    <div class="name_Size_Font" place>{{firstName}}</div>
                 </div>
 
                 <div class="last_Name_Flex">
-                    <div class="name_Size_Font">Lastname</div>
+                    <div class="name_Size_Font">{{lastName}}</div>
                 </div>
                 <div class="tagline_Name_Font">
-                    SOME AWESOME TAGLINE ABOUT YOU
+                    {{person.tagline}}
                 </div>
                 <div class="bio_text_box">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    {{person.bio}}
                 </div>
             </div>
         </div>
@@ -49,13 +43,13 @@
             <div class="update_Profile_Container">
                 <div class="update_Prof_Box">
                     <div class="input_Box_Container">
-                        <input type="text" class="main_Input" placeholder="Full Name">
-                        <input type="text" class="main_Input" placeholder="Tagline">
-                        <input type="text" class="main_Input" placeholder="Profile Image Url">
-                        <textarea class="inital_textarea" placeholder="Bio"></textarea>
+                        <input type="text" class="main_Input" ng-model="fullName" placeholder="Full Name">
+                        <input class="main_Input" type="text" placeholder="Tagline" ng-model="tagline" ></input>
+                        <input class="main_Input" type="text" placeholder="Profile Image Url" ng-model="profileImg"></input>
+                        <textarea class="inital_textarea" placeholder="Bio" ng-model="bio"></textarea>
                     </div>
                 </div>
             </div>
-            <div type="button" href="" class="save_Profile_Changes coursor_pointer">Save Changes</div>
+            <div type="button" href="" class="save_Profile_Changes coursor_pointer" ng-click="setData(fullName, tagline, profileImg, bio)" ui-sref="landing">Save Changes</div>
         </div>
 </body>

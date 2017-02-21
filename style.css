@@ -188,12 +188,14 @@ a {
 /*landing additions*/
 
 .triangle_Header {
-    background-image: url("https://pbs.twimg.com/profile_images/820457701813518337/VmhyKoOz_bigger.jpg");
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 39px 25px 0 25px;
-    border-color: transparent white white white;
+    background-image: url(http://www.i-love-cats.com/images/2015/04/10/enhanced-buzz-18793-1397069650-11.jpg);
+    width: 40px;
+    height: 30px;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    transform: rotate(180%);
+    background-size:cover;
+    background-origin: border;
 }
 
 .input_Triangle_Box {
