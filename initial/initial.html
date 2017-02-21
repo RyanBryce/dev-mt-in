@@ -10,25 +10,27 @@
             <img src="images/icons/Ham.svg" alt="">
         </div>
     </header>
-    {{name}}
     <section class="mid_Mid_Section">
 
-        <div class="welcome_To_Dev welcome_Text_Box_Size">
+        <div class="welcome_To_Dev initial_Input_Box_Size">
             <div class="text_Center_Wrap">
                 <p>Welcome to <span class="tourquios_teal_color">DevMountain</span> Social <br> Add Some Info So Friends Can Find You</p>
             </div>
-            <input class="main_Input" type="text" name="" placeholder="Full Name"></input>
-            <input class="main_Input" type="text" name="" placeholder="Tagline"></input>
-            <input class="main_Input" type="text" name="" placeholder="Profile Image Url"></input>
-            <textarea class="inital_textarea" name="name" placeholder="Bio"></textarea>
-            <input class="main_Input_Button" type="button" ui-sref="landing" value="Save Changes"></input>
+            <input class="main_Input" type="text" value="Full Name" placeholder="Full Name" ng-model="fullName"></input>
+            <input class="main_Input" type="text" placeholder="Tagline" ng-model="tagline" ></input>
+            <input class="main_Input" type="text" placeholder="Profile Image Url" ng-model="profileImg"></input>
+            <textarea class="inital_textarea" placeholder="Bio" ng-model="bio"></textarea>
+            <input class="main_Input_Button" type="button" ui-sref="landing" value="Save Changes" ng-click="setData(fullName, tagline, profileImg, bio)"></input>
 
         </div>
         <div class="triange_Box_Size">
-            <div class="">
-                <div id="diamond-narrow"></div>
+            <div class="dimond_container">
+                <div class="diamond-narrow"></div>
+                <div class="triangle-narrow">
+                  <div class="triangle-narrow_background_img"></div>
+                </div>
+                <div class="triangle_hack_cover"></div>
             </div>
-            <!-- <div class="shape-after"></div> -->
         </div>
     </section>
 </body>

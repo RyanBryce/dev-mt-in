@@ -1,274 +1,344 @@
-body{
-  display: block;
-  height: 100%;
-  margin: 25px 40px 0 40px;
+body {
+    display: block;
+    height: 100%;
+    margin: 25px 40px 0 40px;
 }
 
 .main_Input {
-  border-color: #B6B6B6;
-  color: #B6B6B6;
-  padding: 4px;
-  border-width: 1px;
-  font-size: 19px;
-  width: 375px;
-  font-family: 'Lora', serif;
-  margin: 4px 0px 4px 0px;
+    border-color: #B6B6B6;
+    color: #B6B6B6;
+    padding: 4px;
+    border-width: 1px;
+    font-size: 19px;
+    width: 375px;
+    font-family: 'Lora', serif;
+    margin: 4px 0px 4px 0px;
 }
-.main_Input_Button{
-  background-color: #00FFE9;
-  border: 0;
-  padding: 4px;
-  font-size: 19px;
-  width: 385px;
-  font-family: 'Lora', serif;
-  margin: 4px 0px 4px 0px;
+
+.main_Input_Button {
+    background-color: #00FFE9;
+    border: 0;
+    padding: 4px;
+    font-size: 19px;
+    width: 385px;
+    font-family: 'Lora', serif;
+    margin: 4px 0px 4px 0px;
 }
-.inital_textarea{
-  border-color: #B6B6B6;
-  color: #B6B6B6;
-  padding: 4px;
-  font-size: 19px;
-  width: 375px;
-  height: 250px;
-  font-family: 'Lora', serif;
-  margin: 4px 0px 4px 0px;
-  resize: none;
+
+.inital_textarea {
+    border-color: #B6B6B6;
+    color: #B6B6B6;
+    padding: 4px;
+    font-size: 19px;
+    width: 375px;
+    height: 250px;
+    font-family: 'Lora', serif;
+    margin: 4px 0px 4px 0px;
+    resize: none;
 }
-a{
-  font-family: 'Open Sans', serif;
-  font-size: 18px;
-  text-decoration: none;
-  outline: none;
+
+a {
+    font-family: 'Open Sans', serif;
+    font-size: 18px;
+    text-decoration: none;
+    outline: none;
 }
-.tourquios_teal_color{
-  color: #74FDF2;
+
+.tourquios_teal_color {
+    color: #74FDF2;
 }
+
 .text_Center_Wrap {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
+
 .header_Cont {
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 15px;
-  justify-content: space-between;
-  border-bottom: 1px solid #D7D7D7;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    border-bottom: 1px solid #D7D7D7;
 }
+
 .mid_Mid_Section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 725px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 725px;
 }
+
 .welcome_To_Dev {
-  font-family: 'Lora', serif;
-  font-size: 21px;
-  color: #272727;
-  text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 21px;
+    color: #272727;
+    text-align: center;
 }
-.welcome_Text_Box_Size{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 60px;
-  width: 325px;
-  margin-left: 50px;
-  text-align: justify;
+
+.initial_Input_Box_Size {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 60px;
+    width: 385px;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+.welcome_Text_Box_Size {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 325px;
+    margin-left: 50px;
+    text-align: justify;
 }
 
 .font_Lora_Dev {
-  font-family: 'Lora', serif;
-  font-size: 21px;
-}
-.triange_Box_Size{
-  display: flex;
-  justify-content: center;
-  width: 60%;
-}
-.coursor_pointer:hover {
-  cursor: pointer;
+    font-family: 'Lora', serif;
+    font-size: 21px;
 }
 
-#diamond-narrow {
-  background-image: url("https://pbs.twimg.com/profile_images/820457701813518337/VmhyKoOz_bigger.jpg");
-  margin-left: 25px;
-  margin-top: 102px;
-  border: 250px solid white;
-  border-left-width: 250px;
-  border-right-width: 250px;
-	border-bottom-width: 350px;
-  border-bottom-style: transparent;
-  border-bottom-color: transparent;
-	position: relative;
-  border-top-width: 0px;
-  transform: rotate(6deg);
+.triange_Box_Size {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
 }
-#diamond-narrow:after {
-	content: '';
-	position: absolute;
-	left: -225px;
-  top: 207px;
-	border: 250px solid transparent;
-  border-bottom-width: 0px;
-	border-top: 350px solid #74FDF2;
-  transform: rotate(-14deg);
+
+.coursor_pointer:hover {
+    cursor: pointer;
 }
+
+.dimond_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 725px;
+}
+
+.diamond-narrow {
+    background-image: url(https://s-media-cache-ak0.pinimg.com/736x/94/51/73/945173e3d66ebd25a8aa68189edd22ee.jpg);
+    width: 502px;
+    height: 351px;
+    top: 185px;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: absolute;
+    transform: rotate(6deg);
+}
+
+.triangle-narrow {
+    width: 500px;
+    top: 377px;
+    height: 350px;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(-188deg);
+    position: absolute;
+    background: transparent;
+}
+.triangle-narrow_background_img {
+    width: 521px;
+    height: 385px;
+    background-size:cover;
+    background-origin: border;
+     background-image: url(http://www.i-love-cats.com/images/2015/04/10/enhanced-buzz-18793-1397069650-11.jpg);
+     transform: rotate(188deg);
+}
+.triangle_hack_cover{
+    width: 504px;
+    top: 376px;
+    height: 352px;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(-188deg);
+    position: absolute;
+    background-color: #00FFE9;
+    opacity: .23;
+
+}
+
+
+
 .footer_Container {
-  border-top: 2px solid #A9A9A9;
-  height: 50px;
-  margin: 0px 50px 0 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    border-top: 2px solid #A9A9A9;
+    height: 50px;
+    margin: 0px 50px 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
 .loaded {
     border-bottom: 3px solid #74FDF2;
-  }
+}
+
 .bottom-nav {
-   padding: 10px;
-   cursor: pointer;
- }
-
-
- /*landing additions*/
-
-
- .triangle_Header {
-   background-image: url("https://pbs.twimg.com/profile_images/820457701813518337/VmhyKoOz_bigger.jpg");
-   width: 0;
-   height: 0;
-   border-style: solid;
-   border-width: 39px 25px 0 25px;
-   border-color: transparent white white white;
- }
- .input_Triangle_Box {
-   border-color: #B6B6B6;
-   color: #B6B6B6;
-   border-width: 0px;
-   background-color: #ECECEC;
-   font-size: 17px;
-   height: 25px;
-   width: 100px;
-   margin-left: 5px;
-   font-family: 'Lora', serif;
- }
- .top_Input_Triange_Fix {
-   display: flex;
- }
- .first_Name_Flex{
-   display: flex;
-   justify-content: flex-start;
- }
- .last_Name_Flex{
-   display: flex;
-   justify-content: flex-end;
- }
- .name_Size_Font {
-   font-family: 'Lora', serif;
-   font-size: 46px;
- }
- .tagline_Name_Font{
-   font-family: "Open Sans", serif;
-   font-weight: 600;
-   font-size: 14px;
-   padding: 15px 0 15px 0;
- }
- .bio_text_box{
-   height: 350px;
-   font-family: "Open Sans", serif;
-   font-size: 14px;
-   overflow: scroll;
- }
-
-
- /*update Profile */
-
-
- .profile_Setting_Container {
-   height: 50px;
-   width: 500px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   box-shadow: 0px 1px 2px 2px;
-   border-bottom-width: 0px;
-   margin-bottom: 14px;
- }
- .profile_Setting{
-   justify-content: center;
-   display: flex;
-   width: 410px;
- }
- .mid_Section_Right {
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   margin-top: 50px;
-   width: 600px;
- }
- .update_Profile_Container{
-   display: flex;
-   justify-content: center;
-   width: 500px;
-   height: 500px;
-   box-shadow: 0px 1px 2px 2px;
- }
- .update_Prof_Box{
-   width: 410px;
-   padding: 50px 0 20px 0;
- }
- .save_Profile_Changes {
-   height: 50px;
-   width: 500px;
-   font-size: 17px;
-   color: #9A9A9A;
-   margin-top: 14px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   box-shadow: 0px 1px 2px 2px;
- }
-
-
- /*searchForFriends*/
- .search_For_Friends_Profiles{
-   width: 175px;
-   height: 175px;
-   border: 1px solid red;
-   padding: 0px 0 0px 0;
- }
- .search_For_Friends{
-   justify-content: center;
-   flex-grow: 1;
- }
- .search_For_Friends_Text{
-   justify-content: center;
-   font-size: 21px;
-   font-family: 'Lora';
- }
- .search_For_Friends_Img {
-   flex-grow: 1;
- }
-
-
- /*viewFriends*/
-.ascending_box_container{
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
+    padding: 10px;
+    cursor: pointer;
 }
-.ascending_box_container_Box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 16px;
-  width: 104px;
-  border: 2px solid black;
+
+
+/*landing additions*/
+
+.triangle_Header {
+    background-image: url("https://pbs.twimg.com/profile_images/820457701813518337/VmhyKoOz_bigger.jpg");
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 39px 25px 0 25px;
+    border-color: transparent white white white;
 }
-.ascending_box_container_Text{
-  font-family: 'Lora';
-  font-size: 12px;
+
+.input_Triangle_Box {
+    border-color: #B6B6B6;
+    color: #B6B6B6;
+    border-width: 0px;
+    background-color: #ECECEC;
+    font-size: 17px;
+    height: 25px;
+    width: 100px;
+    margin-left: 5px;
+    font-family: 'Lora', serif;
+}
+
+.top_Input_Triange_Fix {
+    display: flex;
+}
+
+.first_Name_Flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.last_Name_Flex {
+    display: flex;
+    justify-content: center;
+}
+
+.name_Size_Font {
+    font-family: 'Lora', serif;
+    font-size: 46px;
+}
+
+.tagline_Name_Font {
+    font-family: "Open Sans", serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 0 15px 0;
+}
+
+.bio_text_box {
+    height: 350px;
+    font-family: "Open Sans", serif;
+    font-size: 14px;
+    overflow-y: scroll;
+    white-space: pre-wrap;
+}
+
+
+/*update Profile */
+
+.profile_Setting_Container {
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 2px 2px;
+    border-bottom-width: 0px;
+    margin-bottom: 14px;
+}
+
+.profile_Setting {
+    justify-content: center;
+    display: flex;
+    width: 410px;
+}
+
+.mid_Section_Right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 600px;
+}
+
+.update_Profile_Container {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0px 1px 2px 2px;
+}
+
+.update_Prof_Box {
+    width: 410px;
+    padding: 50px 0 20px 0;
+}
+
+.save_Profile_Changes {
+    height: 50px;
+    width: 500px;
+    font-size: 17px;
+    color: #9A9A9A;
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 2px 2px;
+}
+
+
+/*searchForFriends*/
+
+.search_For_Friends_Profiles {
+    width: 175px;
+    height: 175px;
+    border: 1px solid red;
+    padding: 0px 0 0px 0;
+}
+
+.search_For_Friends {
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.search_For_Friends_Text {
+    justify-content: center;
+    font-size: 21px;
+    font-family: 'Lora';
+}
+
+.search_For_Friends_Img {
+    flex-grow: 1;
+}
+
+
+/*viewFriends*/
+
+.ascending_box_container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.ascending_box_container_Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    width: 104px;
+    border: 2px solid black;
+}
+
+.ascending_box_container_Text {
+    font-family: 'Lora';
+    font-size: 12px;
 }
