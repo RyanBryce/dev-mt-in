@@ -62,3 +62,15 @@
             </div>
         </div>
     </section>
+    <footer class="footer_Container" ng-controller="navCtrl">
+  		<div class="bottom-nav">
+  			<div ng-class="classActive('/view_Friends')"  ui-sref="View">View Friends</div>
+  		</div>
+  		<div class="bottom-nav">
+  			<div ng-class="classActive('/find_Friends')" ui-sref="Find">Find Friends</div>
+  		</div>
+  		<div class="bottom-nav">
+  			<div ng-class="classActive('/update_Profile')"  ui-sref="Update({id: person._id })">Update Profile</div>
+  		</div>
+  	</footer>
+  </body>

@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            <div class="update_Profile_Container">
+            <div class="update_Profile_Container_cont">
                 <div class="update_Prof_Box">
                     <div class="input_Box_Container">
                         <input type="text" class="main_Input" ng-model="fullName" placeholder="Full Name">
@@ -50,6 +50,18 @@
                     </div>
                 </div>
             </div>
-            <div type="button" href="" class="save_Profile_Changes coursor_pointer" ng-click="setData(fullName, tagline, profileImg, bio)" ui-sref="landing">Save Changes</div>
+            <div type="button" href="" class="save_Profile_Changes coursor_pointer" ui-sref="landing({ name: person.name })" value="Save Changes" ng-click="sendData(fullName, tagline, profileImg, bio)">Save Changes</div>
         </div>
+    </section>
+    <footer class="footer_Container" ng-controller="navCtrl">
+  		<div class="bottom-nav">
+  			<div ng-class="classActive('/view_Friends')"  ui-sref="View">View Friends</div>
+  		</div>
+  		<div class="bottom-nav">
+  			<div ng-class="classActive('/find_Friends')" ui-sref="Find">Find Friends</div>
+  		</div>
+  		<div class="bottom-nav" ng-model="personsId">
+  			<div ng-class="classActive('/update_Profile/' + personsId)"  ui-sref="Update">Update Profile</div>
+  		</div>
+  	</footer>
 </body>

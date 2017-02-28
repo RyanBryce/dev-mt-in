@@ -1,4 +1,4 @@
-<body ng-controller="initialCtrl">
+<body ng-controller="initialCtrl" >
     <header class="header_Cont">
         <div type="button" class="coursor_pointer">
             <img src="images/icons/Search.svg" alt="">
@@ -20,7 +20,7 @@
             <input class="main_Input" type="text" placeholder="Tagline" ng-model="tagline" ></input>
             <input class="main_Input" type="text" placeholder="Profile Image Url" ng-model="profileImg"></input>
             <textarea class="inital_textarea" placeholder="Bio" ng-model="bio"></textarea>
-            <input class="main_Input_Button" type="button" ui-sref="landing" value="Save Changes" ng-click="setData(fullName, tagline, profileImg, bio)"></input>
+            <input class="main_Input_Button" type="button" ui-sref="landing({ name: fullName })" value="Save Changes" ng-click="sendData(fullName, tagline, profileImg, bio)"></input>
 
         </div>
         <div class="triange_Box_Size">
@@ -33,4 +33,15 @@
             </div>
         </div>
     </section>
+    <footer class="footer_Container" ng-controller="navCtrl">
+  		<div class="bottom-nav">
+  			<div ng-class="classActive('/view_Friends')"  ui-sref="View">View Friends</div>
+  		</div>
+  		<div class="bottom-nav">
+  			<div ng-class="classActive('/find_Friends')" ui-sref="Find">Find Friends</div>
+  		</div>
+  		<div class="bottom-nav">
+  			<div ng-class="classActive('/update_Profile')"  ui-sref="Update({id: person._id })">Update Profile</div>
+  		</div>
+  	</footer>
 </body>

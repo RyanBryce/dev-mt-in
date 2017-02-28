@@ -7,12 +7,12 @@ angular.module('app', ['ui.router']).config(function($stateProvider, $urlRouterP
        controller: 'initialCtrl'
      })
      .state('landing', {
-       url: '/landing',
+       url: '/landing/:name',
        templateUrl: 'landing/landingPage.html',
        controller: 'landingCtrl'
      })
      .state('Update', {
-       url: '/update_Profile',
+       url: '/update_Profile/:id',
        templateUrl: 'updateProf/updateProfile.html',
        controller: 'updateCtrl'
      })
