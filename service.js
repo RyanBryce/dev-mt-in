@@ -45,9 +45,9 @@ angular.module('app').service('friendService', function($http, $q) {
   };
 
   this.updateProfile = function (id, user) {
-    return $http.put('http://connections.devmounta.in/api/profiles/'+ id, user)
+    return $http.put('http://connections.devmounta.in/api/profiles/' + id, user)
     .then(function(results) {
-    console.log('this is our put',results);
+    console.log('this is our put', results, user);
     })
   };
 

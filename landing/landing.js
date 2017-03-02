@@ -1,4 +1,4 @@
-angular.module('app').controller('landingCtrl', function($scope, friendService, $stateParams) {
+angular.module('app').controller('landingCtrl', function($scope, friendService, $stateParams, $state) {
     var user = $stateParams.name;
     console.log('this is params', user);
 
@@ -7,7 +7,7 @@ angular.module('app').controller('landingCtrl', function($scope, friendService, 
       .then(function(res) {
         console.log(res);
         $scope.person = res;
-        console.log($scope.person._id);
+        console.log($scope.person);
         return $scope.person
       }).then(function(person){
         var split = person.name.split(' ');
@@ -17,6 +17,9 @@ angular.module('app').controller('landingCtrl', function($scope, friendService, 
       })
     }
     $scope.user();
+
+
+
 
     // $scope.splitter = function(){
     // var nameSplit = $scope.user().split(' ');

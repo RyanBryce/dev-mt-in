@@ -4,7 +4,6 @@ angular.module('app').controller('updateCtrl', function($scope, friendService, $
   $scope.user = function() {
     friendService.meById($stateParams.id)
     .then(function(res) {
-      console.log(res);
       $scope.person = res;
       console.log($scope.person._id);
       return $scope.person
@@ -16,6 +15,7 @@ angular.module('app').controller('updateCtrl', function($scope, friendService, $
     })
   };
   $scope.user();
+
   $scope.sendData = function(name, tagline, profileUrl, bio){
     var user = {
       name: name,
@@ -26,13 +26,13 @@ angular.module('app').controller('updateCtrl', function($scope, friendService, $
     };
 
     friendService.updateProfile($stateParams.id, user)
-    .success(function(response){
-      $scope.person = response
-      console.log( 'wtf', $scope.person);
+    .then(function(response){
+      console.log( 'wtf',response);
     }, function(error){
       console.log(2222222222, error)
     })
   };
+  $scope.sendData()
 
 
   // $scope.setData = function(name, tagline, profileUrl, bio){

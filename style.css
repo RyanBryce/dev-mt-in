@@ -323,7 +323,20 @@ a {
 
 .search_For_Friends {
     justify-content: center;
-    flex-grow: 1;
+
+}
+.profile_Search_Button_Container{
+  height: 50px;
+  width: 425px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 1px 2px 2px;
+  border-bottom-width: 0px;
+  margin-bottom: 14px;
+}
+.profile_Search_Button_Input{
+  width: 100px;
+  height: 15px;
 }
 
 .search_For_Friends_Text {
@@ -333,7 +346,7 @@ a {
 }
 
 .search_For_Friends_Img {
-    flex-grow: 1;
+  width: 130px;
 }
 
 

@@ -39,11 +39,12 @@
             </div>
         </div>
         <div class="mid_Section_Right">
-            <div class="profile_Setting_Container">
-                <div href="#" type "button" class="search_For_Friends_Img">
+            <div class="profile_Search_Button_Container">
+                <div type="button" class="search_For_Friends_Img">
                     <div>
-                        <div>
-                            <img src="images/icons/Search.svg">
+                        <div >
+                            <img ng-click="showInput = ! showInput" class="coursor_pointer" src="images/icons/Search.svg">
+                            <input class="profile_Search_Button_Input" ng-hide="!showInput" type="text">
                         </div>
                     </div>
                 </div>
@@ -55,8 +56,8 @@
             </div>
 
             <div class="update_Profile_Container">
-                <div class="search_For_Friends_Profiles">
-                    <img src="" alt="">
+                <div class="search_For_Friends_Profiles" ng-repeat="peep in people">
+                    <img ng-src="{{peep.profileUrl}}" alt="">
                 </div>
 
             </div>

@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div type="button" href="" class="save_Profile_Changes coursor_pointer" ui-sref="landing({ name: person.name })" value="Save Changes" ng-click="sendData(fullName, tagline, profileImg, bio)">Save Changes</div>
+            <div type="button" href="" class="save_Profile_Changes coursor_pointer" ng-click="sendData(fullName, tagline, profileImg, bio)" ui-sref="landing({ name: fullName })">Save Changes</div>
         </div>
     </section>
     <footer class="footer_Container" ng-controller="navCtrl">
