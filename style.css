@@ -60,7 +60,7 @@ a {
     width: auto;
     display: flex;
     flex-direction: row;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     justify-content: space-between;
     border-bottom: 1px solid #D7D7D7;
 }
@@ -192,11 +192,14 @@ a {
     background-image: url(http://www.i-love-cats.com/images/2015/04/10/enhanced-buzz-18793-1397069650-11.jpg);
     width: 40px;
     height: 30px;
+    padding-bottom: 3px;
     -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
     clip-path: polygon(50% 100%, 0 0, 100% 0);
-    transform: rotate(180%);
     background-size:cover;
-    background-origin: border;
+}
+.triangle_Header_Underline {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #74FDF2;
 }
 
 .input_Triangle_Box {
@@ -238,7 +241,7 @@ a {
 }
 
 .bio_text_box {
-    height: 400px;
+    height: 375px;
     font-family: "Open Sans", serif;
     font-size: 14px;
     overflow-y: scroll;
@@ -313,16 +316,48 @@ a {
 
 /*searchForFriends*/
 
-.search_For_Friends_Profiles {
-    flex-grow: 1;
+#search_For_Friends_Profiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-grow: 1;*/
     min-width: 45%;
     min-height: 30%;
+    background-size: 100% 100%;
     background-color: red;
     border: 10px solid white;
 }
+#search_For_Friends_Profiles .inner_Hover{
+  display: flex;
+flex-direction: column;
+align-items: center;
+visibility:hidden;
+}
+#search_For_Friends_Profiles:hover{
+
+}
+#search_For_Friends_Profiles:hover .inner_Hover{
+  visibility: visible;
+}
+.inner_hover_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #B6B6B6;
+  height: 20px;
+  width: 130px;
+  color: #FFFFFF;
+}
+
+.inner_hover_Text{
+  color: #FFFFFF;
+  font-size: 21px;
+}
 
 .search_For_Friends {
+  padding-right: 25px;
     justify-content: center;
+    flex-grow: 1;
 
 }
 .profile_Search_Button_Container{
@@ -346,16 +381,27 @@ a {
 }
 
 .search_For_Friends_Img {
-  width: 130px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
+.search_For_Friends_Img_Icon {
+  padding-left: 15px;
+  display: flex;
+  flex-grow: 1;
+}
+
+
 
 
 /*viewFriends*/
 
 .ascending_box_container {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+  padding-left: 15px;
 }
 
 .ascending_box_container_Box {
@@ -371,3 +417,11 @@ a {
     font-family: 'Lora';
     font-size: 12px;
 }
+/*friendProf*/
+
+.add_Friend_Btn{
+  height: 35px;
+  background-color: #74fdf2;
+  justify-content: center;
+  align-items: center;
+  display: flex;}

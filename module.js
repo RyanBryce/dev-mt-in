@@ -17,12 +17,17 @@ angular.module('app', ['ui.router']).config(function($stateProvider, $urlRouterP
        controller: 'updateCtrl'
      })
      .state('Find', {
-       url: '/find_Friends',
+       url: '/find_Friends/:id',
        templateUrl: 'friendsSearch/friendsSearch.html',
        controller: 'findCtrl'
      })
+     .state('FoundFriend', {
+       url: '/found_Friend/:name',
+       templateUrl: 'friendsProf/friendsProf.html',
+       controller: 'foundCtrl'
+     })
      .state('View', {
-       url: '/view_Friends',
+       url: '/view_Friends/:id',
        templateUrl: 'friendView/friendView.html',
        controller: 'viewCtrl'
      })

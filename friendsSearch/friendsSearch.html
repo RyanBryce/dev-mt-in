@@ -13,38 +13,32 @@
             <img src="images/icons/Search.svg" alt="">
         </div>
     </header>
-{{name}}
     <section class="mid_Mid_Section">
         <div class="welcome_Text_Box_Size">
             <div class="user_Text_Box">
-
                 <div class="first_Name_Flex">
-                    <div class="name_Size_Font">Firstname</div>
+                    <div class="name_Size_Font">{{firstName}}</div>
                 </div>
 
                 <div class="last_Name_Flex">
-                    <div class="name_Size_Font">Lastname</div>
+                    <div class="name_Size_Font">{{lastName}}</div>
                 </div>
                 <div class="tagline_Name_Font">
-                    SOME AWESOME TAGLINE ABOUT YOU
+                    {{person.tagline}}
                 </div>
                 <div class="bio_text_box">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    {{person.bio}}
                 </div>
+
             </div>
         </div>
         <div class="mid_Section_Right">
             <div class="profile_Search_Button_Container">
-                <div type="button" class="search_For_Friends_Img">
+                <div type="button" class="search_For_Friends_Img_Icon">
                     <div>
-                        <div >
+                        <div>
                             <img ng-click="showInput = ! showInput" class="coursor_pointer" src="images/icons/Search.svg">
-                            <input class="profile_Search_Button_Input" ng-hide="!showInput" type="text">
+                            <input placeholder="Start Your Search" ng-model="searchBox" ng-model-options="{ debounce: 800 }" class="profile_Search_Button_Input" ng-hide="!showInput" type="text">
                         </div>
                     </div>
                 </div>
@@ -56,22 +50,28 @@
             </div>
 
             <div class="update_Profile_Container">
-                <div class="search_For_Friends_Profiles" ng-repeat="peep in people">
-                    <img ng-src="{{peep.profileUrl}}" alt="">
+                <div ng-repeat="person in people | filter: searchBox " id="search_For_Friends_Profiles" ng-style="{'background-image':'url('+person.profileUrl+')'}" ng-repeat="person in people | filter: searchBox ">
+
+                    <div class="inner_Hover">
+                      <div class="inner_hover_Text">{{person.name}}</div>
+                      <br>
+                      <div class="inner_hover_btn coursor_pointer" type="button" ui-sref="FoundFriend({ name: person.name })">VIEW PROFILE</div>
+
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
     <footer class="footer_Container" ng-controller="navCtrl">
-  		<div class="bottom-nav">
-  			<div ng-class="classActive('/view_Friends')"  ui-sref="View">View Friends</div>
-  		</div>
-  		<div class="bottom-nav">
-  			<div ng-class="classActive('/find_Friends')" ui-sref="Find">Find Friends</div>
-  		</div>
-  		<div class="bottom-nav">
-  			<div ng-class="classActive('/update_Profile')"  ui-sref="Update({id: person._id })">Update Profile</div>
-  		</div>
-  	</footer>
-  </body>
+        <div class="bottom-nav">
+            <div ng-class="classActive('/view_Friends/{{person._id}}')"  ui-sref="View({id: person._id })">View Friends</div>
+        </div>
+        <div class="bottom-nav" ng-model="personsId">
+    			<div ng-class="classActive('/find_Friends/' + personsId)"  ui-sref="Find">Find Friends</div>
+    		</div>
+        <div class="bottom-nav">
+            <div ng-class="classActive('/update_Profile/{{person._id}}')" ui-sref="Update({id: person._id })">Update Profile</div>
+        </div>
+    </footer>
+</body>

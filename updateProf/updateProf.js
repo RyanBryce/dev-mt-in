@@ -1,4 +1,4 @@
-angular.module('app').controller('updateCtrl', function($scope, friendService, $stateParams){
+angular.module('app').controller('updateCtrl', function($scope, friendService, $stateParams, $rootScope ){
 
   console.log($stateParams.id);
   $scope.user = function() {
@@ -17,22 +17,18 @@ angular.module('app').controller('updateCtrl', function($scope, friendService, $
   $scope.user();
 
   $scope.sendData = function(name, tagline, profileUrl, bio){
-    var user = {
-      name: name,
-      tagline: tagline,
-      bio: bio,
-      profileUrl: profileUrl,
-      friends: []
-    };
-
-    friendService.updateProfile($stateParams.id, user)
-    .then(function(response){
-      console.log( 'wtf',response);
-    }, function(error){
-      console.log(2222222222, error)
-    })
+    if (name && tagline && profileUrl && bio) {
+      var user = {
+        name: name,
+        tagline: tagline,
+        bio: bio,
+        profileUrl: profileUrl,
+      };
+      friendService.updateProfile($stateParams.id, user)
+    }
   };
   $scope.sendData()
+  console.log('this is global id', $rootScope.globalUserId);
 
 
   // $scope.setData = function(name, tagline, profileUrl, bio){

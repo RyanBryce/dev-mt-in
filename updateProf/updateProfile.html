@@ -55,11 +55,11 @@
     </section>
     <footer class="footer_Container" ng-controller="navCtrl">
   		<div class="bottom-nav">
-  			<div ng-class="classActive('/view_Friends')"  ui-sref="View">View Friends</div>
+  			<div ng-class="classActive('/view_Friends/{{person._id}}')"  ui-sref="View({id: person._id })">View Friends</div>
   		</div>
   		<div class="bottom-nav">
-  			<div ng-class="classActive('/find_Friends')" ui-sref="Find">Find Friends</div>
-  		</div>
+  			<div ng-class="classActive('/find_Friends/{{person._id}}')" ui-sref="Find({id: person._id })">Find Friends</div>
+      </div>
   		<div class="bottom-nav" ng-model="personsId">
   			<div ng-class="classActive('/update_Profile/' + personsId)"  ui-sref="Update">Update Profile</div>
   		</div>

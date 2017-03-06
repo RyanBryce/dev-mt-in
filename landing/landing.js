@@ -1,4 +1,4 @@
-angular.module('app').controller('landingCtrl', function($scope, friendService, $stateParams, $state) {
+angular.module('app').controller('landingCtrl', function($scope, friendService, $stateParams, $state, $rootScope) {
     var user = $stateParams.name;
     console.log('this is params', user);
 
@@ -17,6 +17,7 @@ angular.module('app').controller('landingCtrl', function($scope, friendService, 
       })
     }
     $scope.user();
+    console.log('this is global id', $rootScope.globalUserId);
 
 
 
